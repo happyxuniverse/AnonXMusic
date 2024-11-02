@@ -2,6 +2,8 @@ import asyncio
 import shlex
 from typing import Tuple
 
+
+os.environ["GIT_PYTHON_REFRESH"] = "quiet"
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
